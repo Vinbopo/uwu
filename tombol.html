@@ -1,0 +1,19 @@
+
+<html>
+    <body>
+        <h1>Hai cantikkkk</h1>
+        <img style="height: 400px; width: 500px; margin-right: 100px;" src="https://media1.tenor.com/images/f72035e032125a5395883b8d68d9df5d/tenor.gif">
+        <h1>Mau ga jadi pacarku?</h1>
+        <button id='btn_mau' onclick='alert("I <3 U")'>Mau</button>&nbsp;
+        <button id='btn_gamau' onclick='gamau(this)' style='position:absolute'>Gamau</button>
+    </body>
+    <script>
+        function gamau(id){
+            var mau = document.getElementById('btn_mau');
+            var i = Math.floor(Math.random()*300)+1;
+            var j = Math.floor(Math.random()*100)+mau.offsetTop;
+            id.style.left = i+'px';
+            id.style.top = j+'px';
+        }
+    </script>
+</html>
